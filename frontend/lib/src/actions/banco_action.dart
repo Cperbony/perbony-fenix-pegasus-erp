@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_application/mvc.dart';
-import 'package:perboni_erp_fenix/src/controller/BancoController.dart';
-import 'package:perboni_erp_fenix/src/model/Banco.dart';
-import 'package:perboni_erp_fenix/src/service/BancoService.dart';
+import 'package:perboni_erp_fenix/src/controller/banco_controller.dart';
+import 'package:perboni_erp_fenix/src/model/banco.dart';
+import 'package:perboni_erp_fenix/src/service/banco_service.dart';
 
 class BancoPersistindo extends BancoEditando {
   /// Sobrescrever pois em algum momento preciso inicializar o objeto

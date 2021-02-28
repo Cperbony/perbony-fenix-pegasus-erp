@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_application/mvc.dart';
-import 'package:perboni_erp_fenix/src/controller/BancoAgenciaController.dart';
-import 'package:perboni_erp_fenix/src/model/BancoAgencia.dart';
-import 'package:perboni_erp_fenix/src/service/BancoAgenciaService.dart';
+import 'package:perboni_erp_fenix/src/controller/banco_agencia_controller.dart';
+import 'package:perboni_erp_fenix/src/model/banco_agencia.dart';
+import 'package:perboni_erp_fenix/src/service/banco_agencia_service.dart';
 
 class BancoAgenciaPersistindo extends BancoAgenciaEditando {
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_application/mvc.dart';
-import 'package:perboni_erp_fenix/src/controller/BancoAgenciaController.dart';
+import 'package:perboni_erp_fenix/src/controller/banco_agencia_controller.dart';
 
 import 'delegate/data_search.dart';
 

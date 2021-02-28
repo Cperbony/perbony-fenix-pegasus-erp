@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_application/mvc.dart';
-import 'package:perboni_erp_fenix/src/controller/BancoController.dart';
+import 'package:perboni_erp_fenix/src/controller/banco_controller.dart';
 
 class BancoPersistePage extends StatefulWidget {
   BancoPersistePage({this.banco, this.title, Key key}) : super(key: key);

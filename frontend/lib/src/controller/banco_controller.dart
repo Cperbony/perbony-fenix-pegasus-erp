@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_application/controller.dart';
-import 'package:perboni_erp_fenix/src/model/Banco.dart';
-import 'package:perboni_erp_fenix/src/service/BancoService.dart';
+import 'package:perboni_erp_fenix/src/model/banco.dart';
+import 'package:perboni_erp_fenix/src/service/banco_service.dart';
 import 'package:perboni_erp_fenix/src/view/field_widgets/banco_fields.dart';
 
 class BancoController extends ControllerMVC {

@@ -1,5 +1,5 @@
 import 'package:mvc_application/model.dart';
-import 'package:perboni_erp_fenix/src/model/BancoAgencia.dart';
+import 'package:perboni_erp_fenix/src/model/banco_agencia.dart';
 import 'package:sqflite/sqflite.dart';
 
 class BancoAgenciaService extends DBInterface {

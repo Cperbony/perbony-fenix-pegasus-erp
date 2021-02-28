@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_application/mvc.dart';
-import 'package:perboni_erp_fenix/src/controller/BancoController.dart';
+import 'package:perboni_erp_fenix/src/controller/banco_controller.dart';
 
-import 'BancoDetalhePage.dart';
+import 'Banco_detalhe_page.dart';
 
 class BancoListaPage extends StatefulWidget {
   BancoListaPage({Key key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_application/mvc.dart';
-import 'package:perboni_erp_fenix/src/controller/BancoController.dart';
-import 'package:perboni_erp_fenix/src/model/Banco.dart';
+import 'package:perboni_erp_fenix/src/controller/banco_controller.dart';
+import 'package:perboni_erp_fenix/src/model/banco.dart';
 
 /// Classe que tem algum controle relacionado a página banco_persiste
 class BancoFieldsPersiste extends BancoFieldsLista {

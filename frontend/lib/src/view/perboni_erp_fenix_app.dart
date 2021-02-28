@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:mvc_application/view.dart';
-import 'package:perboni_erp_fenix/src/view/BancoAgenciaPersistePage.dart';
-import 'package:perboni_erp_fenix/src/view/BancoListaPage.dart';
 
-import 'BancoPersistePage.dart';
+import 'Banco_agencia_persiste_page.dart';
+import 'banco_lista_page.dart';
+import 'banco_persiste_page.dart';
 
 class PerboniErpFenixApp extends AppView {
   PerboniErpFenixApp()

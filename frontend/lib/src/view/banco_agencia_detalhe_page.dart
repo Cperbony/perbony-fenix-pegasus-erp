@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_application/app.dart';
 import 'package:mvc_application/mvc.dart';
-import 'package:perboni_erp_fenix/src/controller/BancoAgenciaController.dart';
-
-import 'BancoAgenciaPersistePage.dart';
+import 'package:perboni_erp_fenix/src/controller/banco_agencia_controller.dart';
+import 'Banco_agencia_persiste_page.dart';
 
 class BancoAgenciaDetalhePage extends StatelessWidget {
   BancoAgenciaDetalhePage({this.bancoAgencia, Key key}) : super(key: key) {

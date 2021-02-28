@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_application/controller.dart';
-import 'package:perboni_erp_fenix/src/actions/BancoAgenciaAction.dart';
-import 'package:perboni_erp_fenix/src/model/BancoAgencia.dart';
-import 'package:perboni_erp_fenix/src/service/BancoAgenciaService.dart';
+import 'package:perboni_erp_fenix/src/actions/banco_agencia_action.dart';
+import 'package:perboni_erp_fenix/src/model/banco_agencia.dart';
+import 'package:perboni_erp_fenix/src/service/banco_agencia_service.dart';
 
 class BancoAgenciaController extends ControllerMVC {
   factory BancoAgenciaController() {
