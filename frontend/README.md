@@ -1,4 +1,4 @@
-# perboni_erp_fenix
+# Perboni ERP Fenix-Pegasus
 
 A new Flutter project.
 
