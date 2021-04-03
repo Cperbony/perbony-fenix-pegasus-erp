@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mvc_application/view.dart';
-import 'package:perboni_erp_fenix/src/view/PerboniERPFenixApp.dart';
+import 'package:perboni_erp_fenix/src/view/perboni_erp_fenix_app.dart';
 
 void main() {
   runApp(MyApp());

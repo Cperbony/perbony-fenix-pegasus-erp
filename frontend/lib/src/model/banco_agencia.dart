@@ -62,7 +62,12 @@ class BancoAgencia implements Comparable<BancoAgencia> {
     _observacao = value;
   }
 
-  String get gerente => _gerente;
+  // ignore: unnecessary_getters_setters
+  String get gerente {
+    return _gerente;
+  }
+
+  // ignore: unnecessary_getters_setters
   set gerente(String value) => _gerente = value;
 
   String checkIfValueIsNull(String value) {
@@ -103,6 +108,7 @@ class BancoAgencia implements Comparable<BancoAgencia> {
   int compareTo(BancoAgencia other) => _nome.compareTo(other._nome);
 }
 
+// classe que instancia um campo de formulário no flutter.
 class Id extends FieldWidgets<BancoAgencia> {
   Id([BancoAgencia bancoAgencia])
       : super(object: bancoAgencia, label: 'Id', value: bancoAgencia?.id);

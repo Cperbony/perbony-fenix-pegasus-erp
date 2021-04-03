@@ -19,7 +19,7 @@ class BancoAgenciaService extends DBInterface {
   // TODO: implement name
   String get name => 't2ti_erp_fenix';
 
-  @override
+  // @override
   Future<void> onCreate(Database db, int version) async {
     await db.execute("""
     CREATE TABLE BANCO_AGENCIA(

@@ -28,7 +28,7 @@ class BancoAgenciaController extends ControllerMVC {
     super.dispose();
   }
 
-  @override
+  // @override
   void onError(FlutterErrorDetails details) =>
       FlutterError.dumpErrorToConsole(details);
 

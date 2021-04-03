@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:mvc_application/view.dart';
+import 'package:perboni_erp_fenix/src/view/pessoa_contato_persiste_page.dart';
+import 'package:perboni_erp_fenix/src/view/pessoa_lista_page.dart';
 
 import 'Banco_agencia_persiste_page.dart';
-import 'banco_lista_page.dart';
 import 'banco_persiste_page.dart';
 
 class PerboniErpFenixApp extends AppView {
@@ -13,9 +14,12 @@ class PerboniErpFenixApp extends AppView {
             routes: {
               '/BancoAdd': (BuildContext context) => BancoPersistePage(),
               '/BancoAgenciaAdd': (BuildContext context) =>
-                  BancoAgenciaPersistePage()
+                  BancoAgenciaPersistePage(),
+              '/PessoaAdd': (BuildContext context) => PessoaListaPage(),
+              '/PessoaContatoAdd': (BuildContext context) =>
+                  PessoaContatoPersistePage(),
             },
-            home: BancoListaPage(),
+            home: PessoaListaPage(), //BancoListaPage(),
             theme: ThemeData(
               primarySwatch: Colors.purple,
               accentColor: Colors.orangeAccent[400],
@@ -55,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.display1,
+              style: Theme.of(context).textTheme.headline4,
             ),
           ],
         ),

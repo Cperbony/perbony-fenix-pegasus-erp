@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class DataSearch extends SearchDelegate<String> {
+
+  DataSearch(): super(searchFieldLabel: "Filtro")
+  
   @override
   List<Widget> buildActions(BuildContext context) {
     return [

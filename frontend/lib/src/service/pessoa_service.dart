@@ -16,7 +16,7 @@ class PessoaService extends DBInterface {
   @override
   String get name => 't2ti_erp_fenix_grupo_pessoa';
 
-  @override
+  // @override
   Future<void> onCreate(Database db, int version) async {
     await db.execute("""
         CREATE TABLE PESSOA(

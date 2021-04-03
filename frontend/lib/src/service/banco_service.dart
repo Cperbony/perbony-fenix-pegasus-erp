@@ -19,7 +19,7 @@ class BancoService extends DBInterface {
   // TODO: implement name of DataBase
   String get name => 't2ti_erp_fenix';
 
-  @override
+  // @override
   Future<void> onCreate(Database db, int version) async {
     await db.execute("""
     CREATE TABLE BANCO(
@@ -69,11 +69,18 @@ class BancoService extends DBInterface {
     return bancoSalvo.isNotEmpty;
   }
 
+  // static Future excluir(Map<String, dynamic> banco) async {
+  //   var id = banco['id'];
+  //   if (id == null) return Future.value(false);
+  //   List<Map<String, dynamic>> retorno =
+  //       await _this.rawQuery('DELETE FROM BANCO WHERE ID = $id');
+  //   return retorno.length > 0;
+  // }
+
   static Future excluir(Map<String, dynamic> banco) async {
-    var id = banco['id'];
+    int id = int.parse(banco['id']);
     if (id == null) return Future.value(false);
-    List<Map<String, dynamic>> retorno =
-        await _this.rawQuery('DELETE FROM BANCO WHERE ID = $id');
-    return retorno.length > 0;
+    int retorno = await _this.delete('BANCO', id);
+    return retorno > 0;
   }
 }
