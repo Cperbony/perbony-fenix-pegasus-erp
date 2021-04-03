@@ -4,20 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class DataSearch extends SearchDelegate<String> {
-
-  DataSearch(): super(searchFieldLabel: "Filtro")
-  
-  @override
-  List<Widget> buildActions(BuildContext context) {
-    return [
-      IconButton(
-          icon: Icon(Icons.clear),
-          onPressed: () {
-            query = "";
-          })
-    ];
-  }
-
+  DataSearch() : super(searchFieldLabel: "Filtro");
   @override
   Widget buildLeading(BuildContext context) {
     return IconButton(
@@ -79,5 +66,11 @@ class DataSearch extends SearchDelegate<String> {
     } else {
       throw Exception("Failed to load suggerstions");
     }
+  }
+
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    // TODO: implement buildActions
+    throw UnimplementedError();
   }
 }

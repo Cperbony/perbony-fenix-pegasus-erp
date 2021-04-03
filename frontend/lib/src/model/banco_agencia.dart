@@ -147,16 +147,22 @@ class Contato extends FieldWidgets<BancoAgencia> {
 class Observacao extends FieldWidgets<BancoAgencia> {
   Observacao([BancoAgencia bancoAgencia])
       : super(
-            object: bancoAgencia, label: 'Observação', value: bancoAgencia?.id);
+            object: bancoAgencia,
+            label: 'Observação',
+            value: bancoAgencia?.observacao,
+            maxLines: 3);
 
-  void onSaved(v) => object?.id = value = v;
+  void onSaved(v) => object?.observacao = value = v;
 }
 
 class Gerente extends FieldWidgets<BancoAgencia> {
   Gerente([BancoAgencia bancoAgencia])
-      : super(object: bancoAgencia, label: 'Gerente', value: bancoAgencia?.id);
+      : super(
+            object: bancoAgencia,
+            label: 'Gerente',
+            value: bancoAgencia?.gerente);
 
-  void onSaved(v) => object?.id = value = v;
+  void onSaved(v) => object?.gerente = value = v;
 }
 
 class IdBanco extends FieldWidgets<BancoAgencia> {
